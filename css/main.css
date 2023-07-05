@@ -1,0 +1,14 @@
+:root {
+    /* copy */
+    --primary-copy-color: #7964D3;
+    --secondary-copy-color: white;
+    
+    /* backgrounds */
+    --primary-background-color: #7964D3;
+    --secondary-background-color: white;
+    --accent-background-color: white;
+    /* footer font color */
+
+    /* accent */
+    --accent-color: #FDD700;
+  }
