@@ -20,10 +20,13 @@
 
 * {
   box-sizing: border-box;
-  max-width: 375px;
+  /* min-width: 300px; */
+  /* max-width: 375px; */
   margin: auto;
   padding: 0px;
 }
+
+
 
 /* logo and nav */
 logo {
@@ -44,6 +47,10 @@ ul {
   list-style-type: none;
 }
 
+nav ul li {
+  padding-bottom: 1.5rem;
+}
+
 nav a {
   text-decoration: none;
   color: var(--secondary-color);
@@ -51,6 +58,7 @@ nav a {
   font-size: 18px;
 }
 
+/* headings */
 h1 {
   background-color: var(--brand-color);
 }
@@ -81,6 +89,7 @@ h5 {
   font-size: var(--h5-size);
 }
 
+/* welcome section */
 .welcome {
   display: block;
   background-color: var(--brand-color);
@@ -103,6 +112,7 @@ img {
   border-color: var(--accent-color);
   outline: 3px solid var(--accent-color);
   border-radius: 2.5px;
+  margin: 1rem;
 }
 
 .container {
@@ -119,3 +129,143 @@ img {
 .magic h3{
   color: var(--brand-color);
 }
+
+.testimonials{
+  background-color: var(--accent-color);
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+
+.quote{
+  background-color: var(--brand-color);
+  border-radius: 2.5px;
+  color: var(--secondary-color);
+}
+
+.quote p{
+  padding: 1rem;
+}
+
+.newsletter{
+  background-color: var(--brand-color);
+}
+
+.newsletter h4{
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 2rem;
+}
+
+/* footer */
+
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: black;
+}
+
+footer .footerNav {
+  background-color: black;
+}
+
+.footerNav {
+  text-align: left;
+  /* add to style sheet */
+}
+
+.footerNav a {
+  color: lightslategrey;
+}
+
+.footerNav ul li {
+  padding-bottom: 1.5rem;
+}
+
+#copyright {
+  color: var(--secondary-color)
+}
+
+/* button */
+
+/* button {
+  width: min-content;
+} */
+
+
+.button-main {
+  background-color: var(--accent-color); 
+  border: solid var(--accent-color);
+  color: var(--brand-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* padding-left: -2rem;
+  padding-right: -2rem; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100px;
+  /* align-self: center; */
+  border-radius: 5px;
+  
+}
+
+.button-secondary {
+  background-color: var(--brand-color); 
+  border: solid var(--accent-color);
+  color: var(--accent-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* padding-left: -2rem;
+  padding-right: -2rem; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100px;
+  border-radius: 5px;
+  /* align-self: center; */
+}
+
+.button-3 {
+  background-color: var(--brand-color); 
+  border: solid var(--brand-color);
+  color: var(--secondary-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* padding-left: -2rem;
+  padding-right: -2rem; */
+  /* text-align: center; */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100px;
+  border-radius: 5px;
+  /* align-self: center; */
+  display: flex;
+  justify-content: center;
+}
+
+.button-footer{
+  background-color: var(--brand-color); 
+  border: solid var(--brand-color);
+  color: var(--secondary-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* padding-left: -2rem;
+  padding-right: -2rem; */
+  /* text-align: center; */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 150px;
+  border-radius: 5px;
+  margin: 1rem;
+  /* align-self: center; */
+  
+}
+
+/* .button{
+  padding-left: 20px;
+  width: auto;
+} */
