@@ -73,6 +73,7 @@ h2 {
 h3 {
   padding-bottom: 1rem;
   font-size: var(--h3-size);
+  /* text-align: center; */
 }
 
 p {
@@ -83,6 +84,7 @@ h4 {
   font-size: var(--h4-size);
   padding: 1rem;
   color: var(--brand-color);
+  text-align: center;
 }
 
 h5 {
@@ -90,12 +92,30 @@ h5 {
 }
 
 /* welcome section */
-.welcome {
+/* .welcome {
   display: block;
   background-color: var(--brand-color);
   color: var(--secondary-color);
   padding: 1rem;
+} */
+
+.welcome {
+  background-image: url("../images/filler.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 315px;
+  /* position: relative; */
 }
+
+  .content {
+    display: block;
+    background-color: var(--brand-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+}
+
+
 
 img {
   /* need to fix width here to overflow */
@@ -233,13 +253,13 @@ footer .footerNav {
   color: var(--secondary-color);
   padding-top: 5px;
   padding-bottom: 5px;
-  /* padding-left: -2rem;
-  padding-right: -2rem; */
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
   /* text-align: center; */
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  width: 100px;
+  width: 115px;
   border-radius: 5px;
   /* align-self: center; */
   display: flex;
