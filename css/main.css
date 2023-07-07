@@ -283,7 +283,23 @@ footer .footerNav {
   /* align-self: center; */
 }
 
-/* .button{
-  padding-left: 20px;
-  width: auto;
-} */
+
+/* star content seperator */
+.banner {
+  background-color: var(--brand-color);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.starcontent { 
+  
+  background-image: url(/images/Vector\ \(3\).png);
+  background-repeat: repeat-x;
+  height: 30px;
+  padding: 1rem;
+  background-color: var(--brand-color);
+  background-size: 30px 30px;
+  
+  }
