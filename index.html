@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+
     <link href="css/main.css" rel="stylesheet">
+
 
     <script src="https://kit.fontawesome.com/87845e1bdf.js" crossorigin="anonymous"></script>
     <!-- fonts -->
@@ -15,14 +21,16 @@
 
 <body>
     <div class="wrapper">
+        <!-- wrapper not needed for mobile/tablet -->
         <header>
             <div class="logo">
                 <h1><img src="images/logo.png" alt="logo"></h1>
             </div>
-            <nav>
+            <nav class="main-nav">
                 <ul>
+                    <span class="close-icon">X</span>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html">About</a></li>
                     <!-- <li><a href="#services">Services</a></li>
                     <li><a href="#team">Team</a></li> -->
                     <li><a href="contact.html">Contact</a></li>
@@ -95,7 +103,7 @@
 
 
         <section class="magic">
-            <img class="hero-image" src="images/filler.jpg" alt="">
+            <img src="images/filler.jpg" alt="">
             
             <div class="content-magic">
                 <!-- <img src="images/filler.jpg" alt="welcome image"> -->
@@ -137,9 +145,20 @@
             <h4>Join our newsletter</h4>
             
             <!-- email form -->
+            <div class="container-form">
+                <div class="email-input">
+                  <input type="email" placeholder="Email Address" id="email" required>
+                  <span class="input-icon"><i class="fa fa-envelope"></i></span>
+                </div>
+              </div>
 
             <h4>Follow us</h4>
             <!-- social media icons -->
+            <div class="social-icons">
+                <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+              </div>
         </section>
 
         <footer>

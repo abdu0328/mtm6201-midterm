@@ -6,26 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
 
+     <!-- fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+
     <link href="css/main.css" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/87845e1bdf.js" crossorigin="anonymous"></script>
-    <!-- fonts -->
 
 </head>
 
 <body>
     <div class="wrapper">
+        <!-- wrapper not needed for mobile/tablet -->
         <header>
             <div class="logo">
                 <h1><img src="images/logo.png" alt="logo"></h1>
             </div>
-            <nav>
+            <nav class="main-nav">
                 <ul>
+                    <span class="close-icon">X</span>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html">About</a></li>
                     <!-- <li><a href="#services">Services</a></li>
                     <li><a href="#team">Team</a></li> -->
                     <li><a href="contact.html">Contact</a></li>
+                    <!-- icon buttons as well -->
                 </ul>
             </nav>
         </header>
@@ -33,27 +40,69 @@
         <!-- Web title heading here? -->
         <h2>About</h2>
 
-        <section class="About">
-            <image>
-                <!-- image needed -->
-            </image>
-            <h3>
-                Our Origin Story
-            </h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus suscipit quisquam magnam. Voluptas exercitationem dolor ad fuga, temporibus tempore unde officia error distinctio doloremque, deserunt enim vitae quam nobis.
-            </p>
-            <button type="button">Read More</button>
+        <section class="about">
+            <!-- was about -->
+            <img src="images/filler.jpg" alt="">
+            <div class="content-about">
+                <!-- <img src="images/filler.jpg" alt="welcome image"> -->
+                <h3>
+                    Start your day with a little magic
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus suscipit quisquam magnam. Voluptas exercitationem dolor ad fuga, temporibus tempore unde officia error distinctio doloremque, deserunt enim vitae quam nobis.
+                </p>
+                <button type="button" class="button-3">Read More</button>
+            </div>  
         </section>
 
-        <section class="vision">
+        <section class="banner">
+            <div class="starcontent">
+                <!-- <img src="images/Vector.jpg" alt="star"> -->
+            </div>
+        </section>
+
+        <section class="magic">
+            <!-- was vision -->
+            <div class="content-magic">
+                <!-- <img src="images/filler.jpg" alt="welcome image"> -->
+                <h4>
+                    Vision
+                </h4>
+                <p>
+                    We aim to experiment with new coffee bean blends, flavours, and brewing methods to create innovative and unforgettable coffee experiences for our customers.
+                </p>
+            </div>  
+        </section>
+
+        <section class="banner">
+            <div class="starcontent">
+                <!-- <img src="images/Vector.jpg" alt="star"> -->
+            </div>
+        </section>
+
+        <!-- <section class="vision">
             <h4>Vision</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsum nobis eveniet at expedita. Neque vero suscipit deleniti corporis quisquam. Nesciunt, tempore! Accusamus eum eos perspiciatis, cumque iure eius porro!</p>
+        </section> -->
+
+        <section class="about">
+            <!-- was about -->
+            <img src="images/filler.jpg" alt="">
+            <div class="content-about">
+                <!-- <img src="images/filler.jpg" alt="welcome image"> -->
+                <h3>
+                    Magic Roasters
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus suscipit quisquam magnam. Voluptas exercitationem dolor ad fuga, temporibus tempore unde officia error distinctio doloremque, deserunt enim vitae quam nobis.
+                </p>
+                <button type="button" class="button-3">Read More</button>
+            </div>  
         </section>
 
-        <section class="roasters">
+        <!-- <section class="roasters">
             <image>
-                <!-- image needed -->
+               
             </image>
             <h3>
                 Magic Roasters
@@ -62,20 +111,40 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus suscipit quisquam magnam. Voluptas exercitationem dolor ad fuga, temporibus tempore unde officia error distinctio doloremque, deserunt enim vitae quam nobis.
             </p>
             <button type="button">Read More</button>
-        </section>
+        </section> -->
 
         <section class="newsletter">
             <h4>Join our newsletter</h4>
             
             <!-- email form -->
+            <div class="container-form">
+                <div class="email-input">
+                  <input type="email" placeholder="Email Address" id="email" required>
+                  <span class="input-icon"><i class="fa fa-envelope"></i></span>
+                </div>
+              </div>
 
             <h4>Follow us</h4>
             <!-- social media icons -->
+            <div class="social-icons">
+                <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+              </div>
         </section>
 
         <footer>
-            <button type="button">Magic Coffee Co.</button>
-            ©2023 Magic Coffee Co.
+            <button type="button" class="button-footer">Magic Coffee Co.</button>
+            <!-- <p id="copyright">©2023 Magic Coffee Co.</p> -->
+            <nav class="footerNav">
+                <ul>
+                    <li id="copyright">©2023 Magic Coffee Co.</li>
+                    <li><a href="#privacyPolicy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms & Conditions</a></li>
+                    <li><a href="#cookie">Cookie Policy</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </footer>
     </div>
 </body>

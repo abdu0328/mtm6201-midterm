@@ -26,6 +26,9 @@
   padding: 0px;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
 
 
 /* logo and nav */
@@ -34,7 +37,7 @@
 }
 
 
-nav {
+.main-nav {
   background-color: var(--brand-color);
   text-align: center;
   padding: 1rem;
@@ -43,20 +46,52 @@ nav {
   font-size: 17px;
 }
 
-ul {
+/* ul {
+  list-style-type: none;
+} */
+.main-nav ul li {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   list-style-type: none;
 }
 
-nav ul li {
-  padding-bottom: 1.5rem;
+.close-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  /* cursor: pointer; */
+  font-weight: bold;
+  color: var(--secondary-color)
 }
 
-nav a {
+.close-icon:hover {
+  color: var(--accent-color);
+}
+
+
+.main-nav  ul li a:hover {
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  color: var(--brand-color);
+}
+
+.main-nav a {
   text-decoration: none;
   color: var(--secondary-color);
   font-weight: 400;
   font-size: 18px;
+  /* padding-right: 2rem;
+  padding-left: 2rem; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 150px;
+  padding-left: 150px;
 }
+
+/* nav ul li a:hover {
+  color: var(--brand-color);
+  background-color: var(--accent-color);
+} */
 
 /* headings */
 h1 {
@@ -153,7 +188,7 @@ img {
   color: var(--brand-color);
   /* padding-left: 1rem;
   padding-right: 1rem; */
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   padding-bottom: 2rem;
 }
 
@@ -179,12 +214,13 @@ img {
 
 .newsletter{
   background-color: var(--brand-color);
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 .newsletter h4{
   color: var(--secondary-color);
   text-align: center;
-  padding: 2rem;
 }
 
 /* footer */
@@ -206,74 +242,87 @@ footer .footerNav {
 
 .footerNav a {
   color: lightslategrey;
+  text-decoration: none;
 }
 
 .footerNav ul li {
-  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  text-decoration: none;
+}
+
+.footerNav a:hover{
+  color: var(--accent-color);
 }
 
 #copyright {
   color: var(--secondary-color)
 }
 
-/* button */
-
-/* button {
-  width: min-content;
-} */
-
-
+/* buttons */
 .button-main {
   background-color: var(--accent-color); 
   border: solid var(--accent-color);
   color: var(--brand-color);
-  padding-top: 5px;
-  padding-bottom: 5px;
-  /* padding-left: -2rem;
-  padding-right: -2rem; */
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  width: 100px;
-  /* align-self: center; */
+  width: 110px;
   border-radius: 5px;
+}
+
+.button-main:hover {
+  border: dotted var(--accent-color);
+  background-color: var(--brand-color);
+  color: var(--accent-color);
+  font-size: 1.1rem;
 }
 
 .button-secondary {
   background-color: var(--brand-color); 
   border: solid var(--accent-color);
   color: var(--accent-color);
-  padding-top: 5px;
-  padding-bottom: 5px;
-  /* padding-left: -2rem;
-  padding-right: -2rem; */
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  width: 100px;
+  width: 110px;
   border-radius: 5px;
-  /* align-self: center; */
+}
+
+.button-secondary:hover {
+  border: dotted var(--brand-color);
+  background-color: var(--accent-color);
+  color: var(--brand-color);
+  font-size: 1.1rem;
 }
 
 .button-3 {
   background-color: var(--brand-color); 
   border: solid var(--brand-color);
   color: var(--secondary-color);
-  padding-top: 5px;
-  padding-bottom: 5px;
-  /* padding-left: 2rem;
-  padding-right: 2rem; */
-  /* text-align: center; */
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 16px;
   width: 115px;
   border-radius: 5px;
-  /* align-self: center; */
   display: flex;
   justify-content: center;
+}
+
+.button-3:hover, .button-footer:hover {
+  border: dotted var(--brand-color);
+  background-color: var(--accent-color);
+  color: var(--brand-color);
+  font-size: 1.1rem;
 }
 
 .button-footer{
@@ -282,16 +331,12 @@ footer .footerNav {
   color: var(--secondary-color);
   padding-top: 5px;
   padding-bottom: 5px;
-  /* padding-left: -2rem;
-  padding-right: -2rem; */
-  /* text-align: center; */
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   width: 150px;
   border-radius: 5px;
   margin: 1rem;
-  /* align-self: center; */
 }
 
 
@@ -300,12 +345,9 @@ footer .footerNav {
   background-color: var(--brand-color);
   padding-top: 1rem;
   padding-bottom: 1rem;
-  /* margin-top: 2rem; */
-  /* margin-bottom: 2rem; */
 }
 
 .starcontent { 
-  
   background-image: url("../images/star-icon.png");
   background-repeat: repeat-x;
   height: 30px;
@@ -314,3 +356,111 @@ footer .footerNav {
   background-size: 30px 30px;
   
   }
+
+
+/* newsletter email input/form */
+  .container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1rem; /* Adjust the height as needed */
+    padding-bottom: 4rem;
+  }
+  
+  /* puts content input all inline */
+  .email-input {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .email-input input[type="email"] 
+  {
+    border: none;
+    border-bottom: 1px solid var(--secondary-color);
+    padding-right: 30px; /* Space for the icon */
+    width: 200px; /* Adjust the width as needed */
+    background-color: var(--brand-color);
+    color: var(--secondary-color);
+  }
+
+  input::placeholder{
+    color: var(--secondary-color);
+  }
+  
+  .email-input .input-icon {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+  }
+  
+  .email-input .input-icon i {
+    color: var(--secondary-color);
+  }
+
+
+  /* footer nav
+  .footerNav ul{
+    padding: 1rem;
+  }
+   */
+
+
+   /* about section */
+   .about {
+    /* display: block; */
+    background-color: var(--secondary-color);
+    /* color: var(--secondary-color);
+    padding: 1rem; */
+  }
+  
+  /* .welcome {
+    background-image: url("../images/filler.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 315px;
+  
+  } */
+  
+    .content-about {
+      display: block;
+      background-color: var(--secondary-color);
+      color: var(--brand-color);
+      padding: 1rem 1rem 2rem;
+  }
+
+/* social media icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.facebook {
+  background-color: var(--brand-color);
+  border: solid var(--secondary-color);
+
+}
+
+.twitter {
+  background-color: var(--brand-color);
+  border: solid var(--secondary-color);
+}
+
+.instagram {
+  background-color: var(--brand-color);
+  border: solid var(--secondary-color);
+}
