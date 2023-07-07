@@ -92,21 +92,21 @@ h5 {
 }
 
 /* welcome section */
-/* .welcome {
-  display: block;
-  background-color: var(--brand-color);
-  color: var(--secondary-color);
-  padding: 1rem;
-} */
-
 .welcome {
+  /* display: block; */
+  background-color: var(--brand-color);
+  /* color: var(--secondary-color);
+  padding: 1rem; */
+}
+
+/* .welcome {
   background-image: url("../images/filler.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 315px;
-  /* position: relative; */
-}
+
+} */
 
   .content {
     display: block;
