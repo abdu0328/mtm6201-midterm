@@ -76,6 +76,7 @@ body {
 }
 
 .main-nav a {
+  display: block;
   text-decoration: none;
   color: var(--secondary-color);
   font-weight: 400;
@@ -84,8 +85,8 @@ body {
   padding-left: 2rem; */
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-right: 150px;
-  padding-left: 150px;
+  /* padding-right: 150px;
+  padding-left: 150px; */
 }
 
 /* nav ul li a:hover {
