@@ -15,41 +15,69 @@
 
 <body>
     <div class="wrapper">
+        <!-- wrapper not needed for mobile/tablet -->
         <header>
-            <!-- hamburger button -->
             <div class="logo">
                 <h1><img src="images/logo.png" alt="logo"></h1>
             </div>
-            <nav>
+            <nav class="main-nav">
                 <ul>
+                    <span class="close-icon">X</span>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html">About</a></li>
                     <!-- <li><a href="#services">Services</a></li>
                     <li><a href="#team">Team</a></li> -->
                     <li><a href="contact.html">Contact</a></li>
+                    <!-- icon buttons as well -->
                 </ul>
             </nav>
         </header>
 
         <!-- Web title heading here? -->
-        <h2></h2>
+        <h2>Contact</h2>
 
-        <section class="contact">
-            <image>
-                <!-- image needed -->
-            </image>
-            <h3>
-                Contact Us
-            </h3>
-            
-            <div class="locations">
-                <article>
-                    <ul>Phone</ul>
-                    <ul>Address</ul>
-                    <ul>Hours</ul>
-                </article>
-                <!-- x3 articles -->
-            </div>
+        <img src="images/filler.jpg" alt="">
+
+        <section class="locations">
+            <h4>Our Locations</h4>
+            <!-- <div class="locations"> -->
+                <div class="location-card">
+                    <dl>
+                        <dt>Address:</dt>
+                        <dd>123 Coffee Street</dd>
+                      
+                        <dt>Number:</dt>
+                        <dd>321-123-1234</dd>
+                      
+                        <dt>Hours:</dt>
+                        <dd>8 AM - 3 PM</dd>
+                    </dl>
+                </div>
+                <div class="location-card">
+                    <dl>
+                        <dt>Address:</dt>
+                        <dd>231 Latte Street</dd>
+                      
+                        <dt>Number:</dt>
+                        <dd>321-231-1234</dd>
+                      
+                        <dt>Hours:</dt>
+                        <dd>8 AM - 3 PM</dd>
+                      </dl>
+                </div>
+                <div class="location-card">
+                    <dl>
+                        <dt>Address:</dt>
+                        <dd>321 Tea Street</dd>
+                      
+                        <dt>Number:</dt>
+                        <dd>321-321-1234</dd>
+                      
+                        <dt>Hours:</dt>
+                        <dd>8 AM - 3 PM</dd>
+                      </dl>
+                </div>
+            <!-- </div> -->
             <div class="message">
                 <!-- form -->
                 <button type="button">Send</button>
@@ -60,14 +88,34 @@
             <h4>Join our newsletter</h4>
             
             <!-- email form -->
+            <div class="container-form">
+                <div class="email-input">
+                  <input type="email" placeholder="Email Address" id="email" required>
+                  <span class="input-icon"><i class="fa fa-envelope"></i></span>
+                </div>
+              </div>
 
             <h4>Follow us</h4>
             <!-- social media icons -->
+            <div class="social-icons">
+                <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+              </div>
         </section>
 
         <footer>
-            <button type="button">Magic Coffee Co.</button>
-            ©2023 Magic Coffee Co.
+            <button type="button" class="button-footer">Magic Coffee Co.</button>
+            <!-- <p id="copyright">©2023 Magic Coffee Co.</p> -->
+            <nav class="footerNav">
+                <ul>
+                    <li id="copyright">©2023 Magic Coffee Co.</li>
+                    <li><a href="#privacyPolicy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms & Conditions</a></li>
+                    <li><a href="#cookie">Cookie Policy</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </footer>
     </div>
 </body>

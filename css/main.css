@@ -464,3 +464,23 @@ footer .footerNav {
   background-color: var(--brand-color);
   border: solid var(--secondary-color);
 }
+
+/* locations */
+
+.location-card dl{
+  background-color: var(--brand-color);
+  color: var(--secondary-color);
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 5px;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 1rem;
+  
+}
+
+.location-card dt {
+  float: left;
+  clear: left;
+  width: 40%;
+}
