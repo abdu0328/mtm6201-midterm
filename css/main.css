@@ -144,11 +144,11 @@ h5 {
 
 } */
 
-  .content {
-    display: block;
-    background-color: var(--brand-color);
-    color: var(--secondary-color);
-    padding: 1rem;
+.content {
+  display: block;
+  background-color: var(--brand-color);
+  color: var(--secondary-color);
+  padding: 1rem;
 }
 
 .content-magic {
@@ -232,12 +232,13 @@ footer {
   background-color: black;
 }
 
-footer .footerNav {
+/* footer .footerNav {
   background-color: black;
-}
+} */
 
 .footerNav {
   text-align: left;
+  background-color: black;
   /* add to style sheet */
 }
 
@@ -317,9 +318,27 @@ footer .footerNav {
   border-radius: 5px;
   display: flex;
   justify-content: center;
+  margin-left:0;
 }
 
-.button-3:hover, .button-footer:hover {
+.button-shop {
+  background-color: var(--brand-color); 
+  border: solid var(--brand-color);
+  color: var(--secondary-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  width: 115px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-3:hover, 
+.button-footer:hover, 
+.button-shop:hover {
   border: dotted var(--brand-color);
   background-color: var(--accent-color);
   color: var(--brand-color);
@@ -374,8 +393,7 @@ footer .footerNav {
     display: inline-block;
   }
   
-  .email-input input[type="email"] 
-  {
+  .email-input #email {
     border: none;
     border-bottom: 1px solid var(--secondary-color);
     padding-right: 30px; /* Space for the icon */
@@ -397,6 +415,10 @@ footer .footerNav {
   
   .email-input .input-icon i {
     color: var(--secondary-color);
+  }
+
+  .input-icon i:hover{
+    color: var(--accent-color);
   }
 
 
@@ -439,24 +461,38 @@ footer .footerNav {
 
 .icon {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  background-color: #333;
-  margin: 5px;
+  /* background-color: #333; */
+  margin: 15px;
   color: white;
   text-decoration: none;
 }
 
-.facebook {
-  background-color: var(--brand-color);
-  border: solid var(--secondary-color);
-
+.icon a {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.twitter {
+.facebook,
+.twitter,
+.instagram {
+  background-color: var(--brand-color);
+  border: solid var(--secondary-color);
+}
+
+.facebook:hover,
+.twitter:hover,
+.instagram:hover {
+  background-color: var(--accent-color);
+  border: solid var(--accent-color);
+  color: var(--brand-color);
+}
+
+/* .twitter {
   background-color: var(--brand-color);
   border: solid var(--secondary-color);
 }
@@ -464,7 +500,7 @@ footer .footerNav {
 .instagram {
   background-color: var(--brand-color);
   border: solid var(--secondary-color);
-}
+} */
 
 /* locations */
 
@@ -474,9 +510,10 @@ footer .footerNav {
   padding: 1rem;
   margin: 2rem;
   border-radius: 5px;
-  width: 300px;
+  width: 50%;
   margin: auto;
   margin-bottom: 1rem;
+  /* display: block; */
   
 }
 
@@ -484,4 +521,67 @@ footer .footerNav {
   float: left;
   clear: left;
   width: 40%;
+}
+
+/* message/contact form */
+
+.contact-us{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 2rem;
+}
+#fullname, #email-contact, #subject {
+  padding: 10px;
+
+  margin-top:0.5rem;
+  margin-bottom:1rem;
+  border: none;
+  border-bottom: 1px solid var(--brand-color);
+  border-radius: 2px;
+  width: 100%;
+}
+
+#fullname::placeholder,
+#email-contact::placeholder,
+#subject::placeholder,
+#message::placeholder{
+  color:#222;
+}
+
+#message {
+  height: 300px;
+  margin-top:1rem;
+  margin-bottom:1rem;
+  border: 0.1pt solid #222;
+  border-radius: 2px;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+#message::placeholder{
+  padding: 10px;
+}
+
+/* #message textarea {
+  height: 500px;
+} */
+
+
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  z-index: 9999;
+}
+
+.skip-link:hover {
+  background-color: var(--accent-color);
+  color: var(--brand-color);
+}
+
+.skip-link:focus {
+  top: 0;
 }

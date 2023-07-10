@@ -28,6 +28,8 @@
                     <!-- <li><a href="#services">Services</a></li>
                     <li><a href="#team">Team</a></li> -->
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Shop</a></li>
                     <!-- icon buttons as well -->
                 </ul>
             </nav>
@@ -36,7 +38,12 @@
         <!-- Web title heading here? -->
         <h2>Contact</h2>
 
-        <img src="images/filler.jpg" alt="">
+        <picture>
+            <source srcset="images/coffee-shop-320_x_320.jpg" media="(max-width: 479px)">
+            <source srcset="images/coffee-shop-480_x_480.jpg" media="(min-width: 480px)">
+        
+            <img src="images/coffee-shop.jpg" alt="placeholder">
+        </picture>
 
         <section class="locations">
             <h4>Our Locations</h4>
@@ -44,7 +51,7 @@
                 <div class="location-card">
                     <dl>
                         <dt>Address:</dt>
-                        <dd>123 Coffee Street</dd>
+                        <dd>123 Cafe Street</dd>
                       
                         <dt>Number:</dt>
                         <dd>321-123-1234</dd>
@@ -78,10 +85,44 @@
                       </dl>
                 </div>
             <!-- </div> -->
-            <div class="message">
-                <!-- form -->
+            <!-- <div class="message">
+             
                 <button type="button">Send</button>
+            </div> -->
+
+          
+
+            <!-- <div class="contact-form">
+                <h2>Send us a message</h2>
+                 <form action="#" method="post">
+                    <input id="fullname" type="text" name="fullname" placeholder="Name">
+                    <input id="email" type="text" name="email" placeholder="Email">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <input type="submit" value="Send Message">
+                </form> 
+            </div> -->
+</section>
+<section class="contact-us">
+            <div class="contact">
+                <h4>Send us a message</h4>
+                <!-- <div> -->
+                <!-- <label for="fullname">Full Name</label><br> -->
+                <input id="fullname" name="fullname" type="text" placeholder="Name">
+
+                <!-- <label for="email">Email</label><br> -->
+                <input id="email-contact" name="email" type="text" placeholder="Email">
+
+                 <input id="subject" name="subject" type="text" placeholder="Subject">
+
+                <!-- <label for="message">Message</label><br> -->
+                <textarea id="message" name="message" placeholder=""></textarea>
+                <!-- area is not fully correct for input here (types in the center instead of the top left) -->
+
+                <button class="button-3">Send</button> 
             </div>
+
+
         </section>
 
         <section class="newsletter">
@@ -93,7 +134,7 @@
                   <input type="email" placeholder="Email Address" id="email" required>
                   <span class="input-icon"><i class="fa fa-envelope"></i></span>
                 </div>
-              </div>
+            </div>
 
             <h4>Follow us</h4>
             <!-- social media icons -->

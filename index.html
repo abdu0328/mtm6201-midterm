@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="wrapper">
         <!-- wrapper not needed for mobile/tablet -->
         <header>
@@ -34,6 +35,8 @@
                     <!-- <li><a href="#services">Services</a></li>
                     <li><a href="#team">Team</a></li> -->
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Shop</a></li>
                     <!-- icon buttons as well -->
                 </ul>
             </nav>
@@ -43,7 +46,11 @@
         <h2>Magic Coffee Co.</h2>
 
         <section class="welcome">
-            <img class="hero-image" src="images/filler.jpg" alt="">
+            <picture>
+                <source srcset="images/purple-mist-320_x_221.jpg" media="(max-width: 479px)">
+                <source srcset="images/purple-mist-480_x_331.jpg" media="(min-width: 480px)">
+                <img src="images/purple-mist" alt="hero image">
+            </picture>
             <div class="content">
                 <!-- <img src="images/filler.jpg" alt="welcome image"> -->
                 <h3>
@@ -69,13 +76,18 @@
 
             <!-- article 1 good copy -->
             <article class="drinks">
-                <img src="images/filler.jpg" alt="drink 1">
+                <picture>
+                    <source srcset="images/pixie-latte-320_x_360.jpg" media="(max-width: 479px)">
+                    <source srcset="images/pixie-latte-480_x_480.jpg" media="(min-width: 480px)">
+                
+                    <img src="images/pixie-latte.jpg" alt="placeholder">
+                </picture>
                 <div class="container">
                     <h5>Pixie Dust Latte</h5>
                     <p>Our number one best seller. Made with our special berry syrup and edible glitter.</p>
                 </div>
             </article>
-            <button type="button" class="button-3">Order Ahead</button>
+            <button type="button" class="button-shop">Order Ahead</button>
 
             <!-- <article>
                 <image>
@@ -103,7 +115,14 @@
 
 
         <section class="magic">
-            <img src="images/filler.jpg" alt="">
+            <picture>
+                <!-- landscape -->
+                <source srcset="images/magic-mobile-320_x_300.jpg" media="(max-width: 479px)">
+                <source srcset="images/magic-mobile-480_x_450.jpg" media="(min-width: 480px)">
+                
+               
+                <img src="images/magic-mobile.jpg" alt="placeholder">
+            </picture>
             
             <div class="content-magic">
                 <!-- <img src="images/filler.jpg" alt="welcome image"> -->
@@ -114,7 +133,7 @@
                     We aim to experiment with new coffee bean blends, flavours, and brewing methods to create innovative and unforgettable coffee experiences for our customers.
                 </p>
                 <!-- change style for this button -->
-                <button type="button" class="button-main">Learn More</button>
+                <button type="button" class="button-3">Learn More</button>
             </div>  
         </section>
 
