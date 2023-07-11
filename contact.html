@@ -9,148 +9,137 @@
     <link href="css/main.css" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/87845e1bdf.js" crossorigin="anonymous"></script>
-    <!-- fonts -->
+    <!-- Fonts -->
 
 </head>
 
 <body>
     <div class="wrapper">
-        <!-- wrapper not needed for mobile/tablet -->
-        <header>
+        <header role="banner">
             <div class="logo">
                 <h1><img src="images/logo.png" alt="logo"></h1>
             </div>
             <nav class="main-nav">
+                <span class="close-icon">X</span>
                 <ul>
-                    <span class="close-icon">X</span>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <!-- <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Team</a></li> -->
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="#">Search</a></li>
                     <li><a href="#">Shop</a></li>
-                    <!-- icon buttons as well -->
                 </ul>
             </nav>
         </header>
 
-        <!-- Web title heading here? -->
         <h2>Contact</h2>
 
         <picture>
             <source srcset="images/coffee-shop-320_x_320.jpg" media="(max-width: 479px)">
             <source srcset="images/coffee-shop-480_x_480.jpg" media="(min-width: 480px)">
-        
             <img src="images/coffee-shop.jpg" alt="placeholder">
         </picture>
 
-        <section class="locations">
+        <section class="locations" role="region" aria-label="Locations Section">
             <h4>Our Locations</h4>
-            <!-- <div class="locations"> -->
-                <div class="location-card">
-                    <dl>
-                        <dt>Address:</dt>
-                        <dd>123 Cafe Street</dd>
-                      
-                        <dt>Number:</dt>
-                        <dd>321-123-1234</dd>
-                      
-                        <dt>Hours:</dt>
-                        <dd>8 AM - 3 PM</dd>
-                    </dl>
-                </div>
-                <div class="location-card">
-                    <dl>
-                        <dt>Address:</dt>
-                        <dd>231 Latte Street</dd>
-                      
-                        <dt>Number:</dt>
-                        <dd>321-231-1234</dd>
-                      
-                        <dt>Hours:</dt>
-                        <dd>8 AM - 3 PM</dd>
-                      </dl>
-                </div>
-                <div class="location-card">
-                    <dl>
-                        <dt>Address:</dt>
-                        <dd>321 Tea Street</dd>
-                      
-                        <dt>Number:</dt>
-                        <dd>321-321-1234</dd>
-                      
-                        <dt>Hours:</dt>
-                        <dd>8 AM - 3 PM</dd>
-                      </dl>
-                </div>
-            <!-- </div> -->
-            <!-- <div class="message">
-             
-                <button type="button">Send</button>
-            </div> -->
-
-          
-
-            <!-- <div class="contact-form">
-                <h2>Send us a message</h2>
-                 <form action="#" method="post">
-                    <input id="fullname" type="text" name="fullname" placeholder="Name">
-                    <input id="email" type="text" name="email" placeholder="Email">
-                    <input type="text" name="subject" placeholder="Subject">
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <input type="submit" value="Send Message">
-                </form> 
-            </div> -->
-</section>
-<section class="contact-us">
-            <div class="contact">
-                <h4>Send us a message</h4>
-                <!-- <div> -->
-                <!-- <label for="fullname">Full Name</label><br> -->
-                <input id="fullname" name="fullname" type="text" placeholder="Name">
-
-                <!-- <label for="email">Email</label><br> -->
-                <input id="email-contact" name="email" type="text" placeholder="Email">
-
-                 <input id="subject" name="subject" type="text" placeholder="Subject">
-
-                <!-- <label for="message">Message</label><br> -->
-                <textarea id="message" name="message" placeholder=""></textarea>
-                <!-- area is not fully correct for input here (types in the center instead of the top left) -->
-
-                <button class="button-3">Send</button> 
+            <div class="location-card">
+                <dl>
+                    <!-- <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "LocalBusiness",
+                            "name": "Magic Coffee Co.",
+                            "description": "Magic Coffee Co. is a local coffee shop. This is the original location.",
+                            "openingHours": "Mo,Tu,We,Th,Fr, 08:00-3:00",
+                            "telephone": "+13211231234",
+                            "streetAddress": "123 Cafe Street"
+                        }
+                    </script> -->
+                    <dt>Address:</dt>
+                    <dd itempprop="address">123 Cafe Street</dd>
+                    <dt>Number:</dt>
+                    <dd itemprop="telephone">321-123-1234</dd>
+                    <dt>Hours:</dt>
+                    <dd itemprop="openingHours">8 AM - 3 PM</dd>
+                </dl>
             </div>
-
-
+            <div class="location-card">
+                <dl>
+                    <!-- <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "LocalBusiness",
+                            "name": "Magic Coffee Co.",
+                            "description": "Magic Coffee Co. is a local coffee shop. This is the second opening location.",
+                            "openingHours": "Mo,Tu,We,Th,Fr, 08:00-3:00",
+                            "telephone": "+13211231234",
+                            "streetAddress": "231 Latte Street"
+                        }
+                    </script> -->
+                    <dt>Address:</dt>
+                    <dd itempprop="address">231 Latte Street</dd>
+                    <dt>Number:</dt>
+                    <dd itemprop="telephone">321-231-1234</dd>
+                    <dt>Hours:</dt>
+                    <dd itemprop="openingHours">8 AM - 3 PM</dd>
+                </dl>
+            </div>
+            <div class="location-card" itemscope itemtype="https://schema.org/LocalBusiness">
+                <dl>
+                    <!-- <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "LocalBusiness",
+                            "name": "Magic Coffee Co.",
+                            "description": "Magic Coffee Co. is a local coffee shop. This is the third opening location.",
+                            "openingHours": "Mo,Tu,We,Th,Fr, 08:00-3:00",
+                            "telephone": "+13213211234",
+                            "streetAddress": "321 Tea Street"
+                        }
+                    </script> -->
+                    <dt>Address:</dt>
+                    <dd itempprop="address">321 Tea Street</dd>
+                    <dt>Number:</dt>
+                    <dd itemprop="telephone">321-321-1234</dd>
+                    <dt>Hours:</dt>
+                    <dd itemprop="openingHours">8 AM - 3 PM</dd>
+                </dl>
+            </div>
         </section>
 
-        <section class="newsletter">
+        <section class="contact-us" role="region" aria-label="Contact Form Section">
+            <div class="contact">
+                <h4>Send us a message</h4>
+                <input id="fullname" name="fullname" type="text" placeholder="Name">
+                <input id="email-contact" name="email" type="text" placeholder="Email">
+                <input id="subject" name="subject" type="text" placeholder="Subject">
+                <textarea id="message" name="message" placeholder="Message"></textarea>
+                <button class="button-3">Send</button>
+            </div>
+        </section>
+
+        <section class="newsletter" role="region" aria-label="Newsletter Section">
             <h4>Join our newsletter</h4>
-            
             <!-- email form -->
             <div class="container-form">
                 <div class="email-input">
-                  <input type="email" placeholder="Email Address" id="email" required>
-                  <span class="input-icon"><i class="fa fa-envelope"></i></span>
+                    <input type="email" placeholder="Email Address" id="email" required>
+                    <span class="input-icon"><i class="fa fa-envelope"></i></span>
                 </div>
             </div>
-
             <h4>Follow us</h4>
             <!-- social media icons -->
             <div class="social-icons">
                 <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
-              </div>
+            </div>
         </section>
 
-        <footer>
+        <footer role="contentinfo">
             <button type="button" class="button-footer">Magic Coffee Co.</button>
-            <!-- <p id="copyright">©2023 Magic Coffee Co.</p> -->
             <nav class="footerNav">
                 <ul>
-                    <li id="copyright">©2023 Magic Coffee Co.</li>
+                    <li>&copy;2023 Magic Coffee Co.</li>
                     <li><a href="#privacyPolicy">Privacy Policy</a></li>
                     <li><a href="#terms">Terms & Conditions</a></li>
                     <li><a href="#cookie">Cookie Policy</a></li>

@@ -1,22 +1,13 @@
 :root {
-  /* copy */
+  /* brand colours */
   --brand-color: #7964D3;
   --secondary-color: white;
   --accent-color: #FDD700;
   --h2-size: 2rem;
   --h3-size: 2.5rem;
   --h4-size: 1.5rem;
-  --h5-size: 1.2rem;
-    
-  /* backgrounds */
-  --brand-background-color: #7964D3;
-  --secondary-background-color: white;
-  --accent-background-color: white;
-  /* footer font color */
-
-  /* accent */
-  --accent-color: #FDD700;
-  }
+  --h5-size: 1.2rem; 
+}
 
 * {
   box-sizing: border-box;
@@ -31,11 +22,10 @@ body {
 }
 
 
-/* logo and nav */
+/* logo and main nav*/
 .logo {
   background-color: var(--brand-color);
 }
-
 
 .main-nav {
   background-color: var(--brand-color);
@@ -59,7 +49,6 @@ body {
   position: absolute;
   top: 5px;
   right: 5px;
-  /* cursor: pointer; */
   font-weight: bold;
   color: var(--secondary-color)
 }
@@ -81,20 +70,11 @@ body {
   color: var(--secondary-color);
   font-weight: 400;
   font-size: 18px;
-  /* padding-right: 2rem;
-  padding-left: 2rem; */
   padding-top: 1rem;
   padding-bottom: 1rem;
-  /* padding-right: 150px;
-  padding-left: 150px; */
 }
 
-/* nav ul li a:hover {
-  color: var(--brand-color);
-  background-color: var(--accent-color);
-} */
-
-/* headings */
+/* headings and paragraph styles */
 h1 {
   background-color: var(--brand-color);
 }
@@ -127,22 +107,11 @@ h5 {
   font-size: var(--h5-size);
 }
 
+/* INDEX PAGE CSS */
 /* welcome section */
 .welcome {
-  /* display: block; */
   background-color: var(--brand-color);
-  /* color: var(--secondary-color);
-  padding: 1rem; */
 }
-
-/* .welcome {
-  background-image: url("../images/filler.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 315px;
-
-} */
 
 .content {
   display: block;
@@ -151,28 +120,20 @@ h5 {
   padding: 1rem;
 }
 
-.content-magic {
-  display: block;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  padding: 1rem;
-}
-
-
 img {
-  /* need to fix width here to overflow */
   width: 100%;
   margin: auto;
 }
 
+/* favourite drinks section */
 .favourites {
   color: var(--brand-color);
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
+/* creating drink card */
 .drinks {
-  /* Add shadows to create the "card" effect */
   border-color: var(--accent-color);
   outline: 3px solid var(--accent-color);
   border-radius: 2.5px;
@@ -183,6 +144,7 @@ img {
   padding: 2px 16px;
 }
 
+/* Magic Section */
 .magic {
   display: block;
   background-color: var(--secondary-color);
@@ -193,17 +155,27 @@ img {
   padding-bottom: 2rem;
 }
 
-.magic h3{
+.magic h3 {
   color: var(--brand-color);
 }
 
-.testimonials{
+/* -- same as content, inverse colours */
+.content-magic {
+  display: block;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials {
   background-color: var(--accent-color);
   padding: 1rem;
   padding-bottom: 2rem;
 }
 
-.quote{
+/* quote block */
+.quote {
   background-color: var(--brand-color);
   border-radius: 2.5px;
   color: var(--secondary-color);
@@ -213,6 +185,7 @@ img {
   padding: 1rem;
 }
 
+/* Newsletter Section */
 .newsletter{
   background-color: var(--brand-color);
   padding-top: 1rem;
@@ -224,17 +197,13 @@ img {
   text-align: center;
 }
 
-/* footer */
+/* Footer */
 
 footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: black;
 }
-
-/* footer .footerNav {
-  background-color: black;
-} */
 
 .footerNav {
   text-align: left;
@@ -262,7 +231,7 @@ footer {
   color: var(--secondary-color)
 }
 
-/* buttons */
+/* Buttons */
 .button-main {
   background-color: var(--accent-color); 
   border: solid var(--accent-color);
@@ -360,7 +329,7 @@ footer {
 }
 
 
-/* star content seperator */
+/* Star Banner */
 .banner {
   background-color: var(--brand-color);
   padding-top: 1rem;
@@ -377,17 +346,16 @@ footer {
   
   }
 
-
-/* newsletter email input/form */
+/* Newsletter Email Input/Form */
   .container-form {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1rem; /* Adjust the height as needed */
+    height: 1rem;
     padding-bottom: 4rem;
   }
   
-  /* puts content input all inline */
+  /* -- puts content input all inline */
   .email-input {
     position: relative;
     display: inline-block;
@@ -421,39 +389,20 @@ footer {
     color: var(--accent-color);
   }
 
-
-  /* footer nav
-  .footerNav ul{
-    padding: 1rem;
-  }
-   */
-
-
-   /* about section */
+  /* ABOUT PAGE CSS */
+   /* About section */
    .about {
-    /* display: block; */
     background-color: var(--secondary-color);
-    /* color: var(--secondary-color);
-    padding: 1rem; */
   }
   
-  /* .welcome {
-    background-image: url("../images/filler.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 315px;
-  
-  } */
-  
-    .content-about {
-      display: block;
-      background-color: var(--secondary-color);
-      color: var(--brand-color);
-      padding: 1rem 1rem 2rem;
+  .content-about {
+    display: block;
+    background-color: var(--secondary-color);
+    color: var(--brand-color);
+    padding: 1rem 1rem 2rem;
   }
 
-/* social media icons */
+/* Social Media Icons */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -492,19 +441,9 @@ footer {
   color: var(--brand-color);
 }
 
-/* .twitter {
-  background-color: var(--brand-color);
-  border: solid var(--secondary-color);
-}
-
-.instagram {
-  background-color: var(--brand-color);
-  border: solid var(--secondary-color);
-} */
-
-/* locations */
-
-.location-card dl{
+/* CONTACT PAGE CSS */
+/* Locations Section */
+.location-card dl {
   background-color: var(--brand-color);
   color: var(--secondary-color);
   padding: 1rem;
@@ -514,7 +453,6 @@ footer {
   margin: auto;
   margin-bottom: 1rem;
   /* display: block; */
-  
 }
 
 .location-card dt {
@@ -523,16 +461,17 @@ footer {
   width: 40%;
 }
 
-/* message/contact form */
-
+/* Message/Contact form */
 .contact-us{
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 2rem;
 }
-#fullname, #email-contact, #subject {
-  padding: 10px;
 
+#fullname, 
+#email-contact, 
+#subject {
+  padding: 10px;
   margin-top:0.5rem;
   margin-bottom:1rem;
   border: none;
@@ -545,7 +484,7 @@ footer {
 #email-contact::placeholder,
 #subject::placeholder,
 #message::placeholder{
-  color:#222;
+  color: lightslategray;
 }
 
 #message {
@@ -562,26 +501,82 @@ footer {
   padding: 10px;
 }
 
-/* #message textarea {
-  height: 500px;
-} */
-
-
+/* SKIP LINK CSS */
 .skip-link {
   position: absolute;
-  top: -50px;
-  left: 0;
-  background-color: #000;
-  color: #fff;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* ^keeps skip-link close to center when expanding page size */
+  background-color: var(--brand-color);
+  border: dashed var(--accent-color);
+  color: var(--secondary-color);
   padding: 10px;
-  z-index: 9999;
 }
 
-.skip-link:hover {
+.skip-link:hover,
+.skip-link-footer:hover {
   background-color: var(--accent-color);
   color: var(--brand-color);
 }
 
-.skip-link:focus {
-  top: 0;
+.skip-link-footer{
+  position: absolute;
+  right: 1px;
+  background-color: var(--brand-color);
+  border: dashed var(--accent-color);
+  color: var(--secondary-color);
+  padding: 10px;
+}
+
+#magic-animate {
+  animation-name: hoverstate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  /* animation-timing-function: ease-in-out; */
+}
+
+/* ANIMATIONS */
+/* Animation 1 */
+@keyframes hoverstate {
+  0%{
+    transform: rotate(-2deg);
+    color: var(--accent-color);
+  }
+  
+  50%{
+    transform: rotate(2deg);
+    color: var(--primary-color);
+  }
+
+  100%{
+    transform: rotate(-2deg);
+    color: var(--accent-color);
+  }
+}
+
+/* Animation 2 */
+.star-header {
+  width: 30px;
+  height: 30px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  animation-name: star;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes star {
+  from{
+    transform: scale(0.5);
+    color: var(--secondary-color);
+  }
+  
+  to{
+    transform: scale(1.2) skewX(-10deg);
+    color: var(--accent-color);
+  }
 }

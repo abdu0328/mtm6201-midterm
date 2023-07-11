@@ -6,186 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
-    <!-- fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Poppins:wght@400;800&display=swap" rel="stylesheet">
 
     <link href="css/main.css" rel="stylesheet">
 
-
     <script src="https://kit.fontawesome.com/87845e1bdf.js" crossorigin="anonymous"></script>
-    <!-- fonts -->
-
+    <!-- Fonts -->
 </head>
 
 <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <a class="skip-link" href="#skip-link" aria-label="Skip to main content">Skip to main content</a>
     <div class="wrapper">
-        <!-- wrapper not needed for mobile/tablet -->
-        <header>
-            <div class="logo">
-                <h1><img src="images/logo.png" alt="logo"></h1>
+        <header id="skip-link-footer" role="banner">
+            <div itemscope itemtype="https://schema.org/ImageObject" class="logo">
+                <h1><img itemprop="logo" src="images/logo.png" alt="Magic Coffee Co. logo"></h1>
             </div>
             <nav class="main-nav">
+                <span class="close-icon">X</span>
                 <ul>
-                    <span class="close-icon">X</span>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <!-- <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Team</a></li> -->
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="#">Search</a></li>
                     <li><a href="#">Shop</a></li>
-                    <!-- icon buttons as well -->
                 </ul>
             </nav>
         </header>
 
-        <!-- Web title heading here? -->
-        <h2>Magic Coffee Co.</h2>
+        <h2> 
+            <!-- <img class="star-header" src="images/star-icon.png" alt="star">  -->
+                <div id="magic-animate">Magic Coffee Co. </div>
+            <!-- <img class="star-header" src="images/star-icon.png" alt="star"> -->
+        </h2>
 
-        <section class="welcome">
-            <picture>
+        <section class="welcome" role="region" aria-label="Welcome Section">
+            <picture itemscope itemtype="https://schema.org/ImageObject">
                 <source srcset="images/purple-mist-320_x_221.jpg" media="(max-width: 479px)">
                 <source srcset="images/purple-mist-480_x_331.jpg" media="(min-width: 480px)">
-                <img src="images/purple-mist" alt="hero image">
+                <img itemprop="image" src="images/purple-mist.jpg" alt="Website hero and welcome image">
             </picture>
-            <div class="content">
-                <!-- <img src="images/filler.jpg" alt="welcome image"> -->
-                <h3>
-                    Start your day with a little magic
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus suscipit quisquam magnam. Voluptas exercitationem dolor ad fuga, temporibus tempore unde officia error distinctio doloremque, deserunt enim vitae quam nobis.
-                </p>
+            <div class="content" id="skip-link">
+                <h3>Start your day with a little magic <img class="star-header" src="images/star-icon.png" alt="star"> </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus suscipit quisquam magnam. Voluptas exercitationem dolor ad fuga, temporibus tempore unde officia error distinctio doloremque, deserunt enim vitae quam nobis.</p>
                 <button type="button" class="button-main">Menu</button>
                 <button type="button" class="button-secondary">Find Us</button>
-            </div>  
-        </section>
-
-          <!-- star content -->
-        <section class="banner">
-            <div class="starcontent">
-                <!-- <img src="images/Vector.jpg" alt="star"> -->
             </div>
         </section>
 
-        <section class="favourites">
-            <h4>Customer Favourites</h4>
+        <section class="banner">
+            <div class="starcontent"></div>
+        </section>
 
-            <!-- article 1 good copy -->
-            <article class="drinks">
-                <picture>
+        <section class="favourites" role="region" aria-label="Customer Favourites Section">
+            <h4>Customer Favourites</h4>
+            <article class="drinks" itemscope itemtype="https://schema.org/Article">
+                <picture itemscope itemtype="https://schema.org/ImageObject">
                     <source srcset="images/pixie-latte-320_x_360.jpg" media="(max-width: 479px)">
                     <source srcset="images/pixie-latte-480_x_480.jpg" media="(min-width: 480px)">
-                
-                    <img src="images/pixie-latte.jpg" alt="placeholder">
+                    <img itemprop="image" src="images/pixie-latte.jpg" alt="placeholder">
                 </picture>
                 <div class="container">
-                    <h5>Pixie Dust Latte</h5>
-                    <p>Our number one best seller. Made with our special berry syrup and edible glitter.</p>
+                    <h5 itemprop="name">Pixie Dust Latte</h5>
+                    <p itemprop="description">Our number one best seller. Made with our special berry syrup and edible glitter.</p>
                 </div>
             </article>
             <button type="button" class="button-shop">Order Ahead</button>
-
-            <!-- <article>
-                <image>
-                    
-                </image>
-                <h5>Classic Wizard Latte</h5>
-                <p>Our class magic latte made with our magic roasted specialty beans.</p>
-            </article>
-            <article>
-                <image>
-                    
-                </image>
-                <h5>Couldren Cold Brew</h5>
-                <p>Try our Couldren Cold Brew, it’s magically refreshing with a new twist you won’t want to miss out!</p>
-            </article>
-            <button type="button">Shop</button> -->
         </section>
 
-        <!-- star content -->
         <section class="banner">
-            <div class="starcontent">
-                <!-- <img src="images/Vector.jpg" alt="star"> -->
-            </div>
+            <div class="starcontent"></div>
         </section>
 
-
-        <section class="magic">
-            <picture>
-                <!-- landscape -->
+        <section class="magic" role="region" aria-label="Magic Section">
+            <picture itemscope itemtype="https://schema.org/ImageObject">
                 <source srcset="images/magic-mobile-320_x_300.jpg" media="(max-width: 479px)">
                 <source srcset="images/magic-mobile-480_x_450.jpg" media="(min-width: 480px)">
-                
-               
-                <img src="images/magic-mobile.jpg" alt="placeholder">
+                <img itemprop="image" src="images/magic-mobile.jpg" alt="placeholder">
             </picture>
-            
             <div class="content-magic">
-                <!-- <img src="images/filler.jpg" alt="welcome image"> -->
-                <h3>
-                    Leave with magic
-                </h3>
-                <p>
-                    We aim to experiment with new coffee bean blends, flavours, and brewing methods to create innovative and unforgettable coffee experiences for our customers.
-                </p>
-                <!-- change style for this button -->
+                <h3>Leave with magic</h3>
+                <p>We aim to experiment with new coffee bean blends, flavours, and brewing methods to create innovative and unforgettable coffee experiences for our customers.</p>
                 <button type="button" class="button-3">Learn More</button>
-            </div>  
-        </section>
-
-        <!-- star content -->
-        <section class="banner">
-            <div class="starcontent">
-                <!-- <img src="images/Vector.jpg" alt="star"> -->
             </div>
         </section>
-        
-        <section class="testimonials">
-            <h4>Testimonials</h4>
-            <article class="quote">
-                <p>“Every drink I’ve tried is a 
-                    magical experience! Definitely a 
-                    great way to shake up the 
-                    morning.”</p>
-            </article>
-            <!-- <article>
-                <p></p>
-            </article>
-            <article>
-                <p></p>
-            </article> -->
+
+        <section class="banner">
+            <div class="starcontent"></div>
         </section>
 
-        <section class="newsletter">
+        <section class="testimonials" role="region" aria-label="Testimonials Section">
+            <h4>Testimonials</h4>
+            <article class="quote">
+                <p>“Every drink I’ve tried is a magical experience! Definitely a great way to shake up the morning.”</p>
+            </article>
+        </section>
+
+        <section class="newsletter" role="region" aria-label="Newsletter Section">
             <h4>Join our newsletter</h4>
-            
-            <!-- email form -->
             <div class="container-form">
                 <div class="email-input">
-                  <input type="email" placeholder="Email Address" id="email" required>
-                  <span class="input-icon"><i class="fa fa-envelope"></i></span>
+                    <input type="email" placeholder="Email Address" id="email" required>
+                    <span class="input-icon"><i class="fa fa-envelope"></i></span>
                 </div>
-              </div>
-
+            </div>
             <h4>Follow us</h4>
-            <!-- social media icons -->
             <div class="social-icons">
                 <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
-              </div>
+            </div>
         </section>
 
-        <footer>
+        <footer role="contentinfo">
+            <a class="skip-link-footer" href="#skip-link-footer" aria-label="Back to top">Back to top</a>
             <button type="button" class="button-footer">Magic Coffee Co.</button>
-            <!-- <p id="copyright">©2023 Magic Coffee Co.</p> -->
             <nav class="footerNav">
                 <ul>
-                    <li id="copyright">©2023 Magic Coffee Co.</li>
+                    <li>&copy;2023 Magic Coffee Co.</li>
                     <li><a href="#privacyPolicy">Privacy Policy</a></li>
                     <li><a href="#terms">Terms & Conditions</a></li>
                     <li><a href="#cookie">Cookie Policy</a></li>
@@ -196,5 +136,3 @@
     </div>
 </body>
 </html>
-
-<!-- test push -->
