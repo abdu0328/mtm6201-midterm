@@ -76,7 +76,7 @@ body {
 
 .main-nav ul li:nth-child(1) a {
   /* targeting to provide space between the first home link from the skip-link */
-  margin-top: 2.5rem;
+  margin-top: 3.6rem;
 }
 
 /* Headings and Paragraph Styles */
@@ -525,6 +525,7 @@ footer {
   border: dashed var(--accent-color);
   color: var(--secondary-color);
   padding: 10px;
+  text-align: center;
 }
 
 .skip-link:hover,
