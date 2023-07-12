@@ -540,6 +540,7 @@ footer {
   border: dashed var(--accent-color);
   color: var(--secondary-color);
   padding: 10px;
+  margin-right: 1rem;
 }
 
 #magic-animate {
