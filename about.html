@@ -17,6 +17,8 @@
 </head>
 
 <body>
+    <!-- skip link that skips to the main content -->
+    <a class="skip-link" href="#skip-link" aria-label="Skip to main content">Skip to main content</a>
     <header id="skip-link-footer" role="banner">
         <div itemscope itemtype="https://schema.org/ImageObject" class="logo">
             <h1><img itemprop="logo" src="images/logo.png" alt="Magic Coffee Co. logo"></h1>
@@ -42,8 +44,8 @@
             <source srcset="images/shop-owner-480_x_520.jpg" media="(min-width: 480px)">
             <img itemprop="image" src="images/shop-owner.jpg" alt="placeholder">
         </picture>
-        <div class="content-about">
-            <h3>Our Origin Story</h3>
+        <div class="content-about" id="skip-link">
+            <h3>Our Origin Story<img class="star-header" src="images/star-icon.png" alt="star"></h3>
             <p>Magic Coffee Co. began in 2022, and 
                 have slowly been establishing 
                 ourselves in the community in the past 
@@ -82,7 +84,7 @@
             <img itemprop="image" src="images/coffee-roaster.jpg" alt="placeholder">
         </picture>
         <div class="content-about">
-            <h3>Magic Roasters</h3>
+            <h3>Magic Roasters<img class="star-header" src="images/star-icon.png" alt="star"></h3>
             <p>Experience the magic of Magic Coffee Co.'s roasters, who conjure captivating flavors and aromas with their expert skills. From carefully selected beans, they create enchanting blends that range from rich and velvety dark roasts to vibrant and nuanced light roasts. Prepare to be spellbound by the bewitching flavors awaiting you at Magic Coffee Co., where our roasters' expertise brings your coffee dreams to life.</p>
             <button type="button" class="button-3">Read More</button>
         </div>  
@@ -107,8 +109,10 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer role="contentinfo">
+     <!-- Footer -->
+     <footer role="contentinfo">
+        <!-- skip link in the footer that goes back to the top -->
+        <a class="skip-link-footer" href="#skip-link-footer" aria-label="Back to top">Back to top</a>
         <button type="button" class="button-footer">Magic Coffee Co.</button>
         <nav class="footerNav">
             <ul>

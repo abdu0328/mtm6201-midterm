@@ -12,6 +12,8 @@
 </head>
 
 <body>
+    <!-- skip link that skips to the main content -->
+    <a class="skip-link" href="#skip-link" aria-label="Skip to main content">Skip to main content</a>
     <header id="skip-link-footer" role="banner">
         <div itemscope itemtype="https://schema.org/ImageObject" class="logo">
             <h1><img itemprop="logo" src="images/logo.png" alt="Magic Coffee Co. logo"></h1>
@@ -39,7 +41,7 @@
     <!-- Locations Section -->
     <section class="locations" role="region" aria-label="Locations Section">
         <h4>Our Locations</h4>
-        <div class="location-card">
+        <div class="location-card" id="skip-link">
             <dl itemscope itemtype="https://schema.org/LocalBusiness">
                 <dt>Address:</dt>
                 <dd itemprop="address">123 Cafe Street</dd>
@@ -104,6 +106,8 @@
 
     <!-- Footer -->
     <footer role="contentinfo">
+        <!-- skip link in the footer that goes back to the top -->
+        <a class="skip-link-footer" href="#skip-link-footer" aria-label="Back to top">Back to top</a>
         <button type="button" class="button-footer">Magic Coffee Co.</button>
         <nav class="footerNav">
             <ul>

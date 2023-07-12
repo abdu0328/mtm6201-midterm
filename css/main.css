@@ -543,7 +543,7 @@ footer {
 }
 
 #magic-animate {
-  /* setting up h1 animation*/
+  /* setting up h1 animation properties*/
   animation-name: h1magic;
   animation-duration: 1.25s;
   animation-iteration-count: infinite;
@@ -577,6 +577,7 @@ footer {
   height: 30px;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  /* animation properties */
   animation-name: star;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
