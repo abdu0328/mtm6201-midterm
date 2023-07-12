@@ -11,105 +11,114 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Poppins:wght@400;800&display=swap" rel="stylesheet">
 
-    <link href="css/main.css" rel="stylesheet">
-
     <script src="https://kit.fontawesome.com/87845e1bdf.js" crossorigin="anonymous"></script>
-    <!-- Fonts -->
+
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header role="banner">
-            <div class="logo">
-                <h1><img src="images/logo.png" alt="logo"></h1>
+    <header id="skip-link-footer" role="banner">
+        <div itemscope itemtype="https://schema.org/ImageObject" class="logo">
+            <h1><img itemprop="logo" src="images/logo.png" alt="Magic Coffee Co. logo"></h1>
+        </div>
+        <nav class="main-nav">
+            <span class="close-icon">X</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 id="magic-animate">About</h2>
+
+    <!-- About Origin Section -->
+    <section class="about" role="region" aria-label="About Section">
+        <picture itemscope itemtype="https://schema.org/ImageObject">
+            <source srcset="images/shop-owner-320_x_360.jpg" media="(max-width: 479px)">
+            <source srcset="images/shop-owner-480_x_520.jpg" media="(min-width: 480px)">
+            <img itemprop="image" src="images/shop-owner.jpg" alt="placeholder">
+        </picture>
+        <div class="content-about">
+            <h3>Our Origin Story</h3>
+            <p>Magic Coffee Co. began in 2022, and 
+                have slowly been establishing 
+                ourselves in the community in the past 
+                year. The idea first started with our co 
+                founders getting bored of their 
+                morning coffee fixtures, and decided 
+                to have fun with creating wacky 
+                creations...</p>
+            <button type="button" class="button-3">Read More</button>
+        </div>  
+    </section>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="starcontent"></div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="magic" role="region" aria-label="Vision Section">
+        <div class="content-magic">
+            <h4>Vision</h4>
+            <p>We aim to experiment with new coffee bean blends, flavours, and brewing methods to create innovative and unforgettable coffee experiences for our customers.</p>
+        </div>  
+    </section>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="starcontent"></div>
+    </section>
+
+    <!-- About Roasters Section -->
+    <section class="about" role="region" aria-label="Magic Roasters Section">
+        <picture itemscope itemtype="https://schema.org/ImageObject">
+            <source srcset="images/coffee-roaster-320_x_320.jpg" media="(max-width: 479px)">
+            <source srcset="images/coffee-roaster-480_x_480.jpg" media="(min-width: 480px)">
+            <img itemprop="image" src="images/coffee-roaster.jpg" alt="placeholder">
+        </picture>
+        <div class="content-about">
+            <h3>Magic Roasters</h3>
+            <p>Experience the magic of Magic Coffee Co.'s roasters, who conjure captivating flavors and aromas with their expert skills. From carefully selected beans, they create enchanting blends that range from rich and velvety dark roasts to vibrant and nuanced light roasts. Prepare to be spellbound by the bewitching flavors awaiting you at Magic Coffee Co., where our roasters' expertise brings your coffee dreams to life.</p>
+            <button type="button" class="button-3">Read More</button>
+        </div>  
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter" role="region" aria-label="Newsletter Section">
+        <h4>Join our newsletter</h4>
+        <!-- newsletter email signup form -->
+        <div class="container-form">
+            <div class="email-input">
+                <input type="email" placeholder="Email Address" id="email" required>
+                <span class="input-icon"><i class="fa fa-envelope"></i></span>
             </div>
-            <nav class="main-nav">
-                <span class="close-icon">X</span>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#">Search</a></li>
-                    <li><a href="#">Shop</a></li>
-                </ul>
-            </nav>
-        </header>
+        </div>
+        <h4>Follow us</h4>
+        <!-- social media icon nav bar -->
+        <div class="social-icons">
+            <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
 
-        <h2>About</h2>
-
-        <section class="about" role="region" aria-label="About Section">
-            <picture>
-                <source srcset="images/shop-owner-320_x_360.jpg" media="(max-width: 479px)">
-                <source srcset="images/shop-owner-480_x_520.jpg" media="(min-width: 480px)">
-                <img src="images/shop-owner.jpg" alt="placeholder">
-            </picture>
-            <div class="content-about">
-                <h3>Start your day with a little magic</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus suscipit quisquam magnam. Voluptas exercitationem dolor ad fuga, temporibus tempore unde officia error distinctio doloremque, deserunt enim vitae quam nobis.</p>
-                <button type="button" class="button-3">Read More</button>
-            </div>  
-        </section>
-
-        <section class="banner">
-            <div class="starcontent"></div>
-        </section>
-
-        <section class="magic" role="region" aria-label="Vision Section">
-            <div class="content-magic">
-                <h4>Vision</h4>
-                <p>We aim to experiment with new coffee bean blends, flavours, and brewing methods to create innovative and unforgettable coffee experiences for our customers.</p>
-            </div>  
-        </section>
-
-        <section class="banner">
-            <div class="starcontent"></div>
-        </section>
-
-        <section class="about" role="region" aria-label="Magic Roasters Section">
-            <picture>
-                <source srcset="images/coffee-roaster-320_x_320.jpg" media="(max-width: 479px)">
-                <source srcset="images/coffee-roaster-480_x_480.jpg" media="(min-width: 480px)">
-                <img src="images/coffee-roaster.jpg" alt="placeholder">
-            </picture>
-            <div class="content-about">
-                <h3>Magic Roasters</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus suscipit quisquam magnam. Voluptas exercitationem dolor ad fuga, temporibus tempore unde officia error distinctio doloremque, deserunt enim vitae quam nobis.</p>
-                <button type="button" class="button-3">Read More</button>
-            </div>  
-        </section>
-
-        <section class="newsletter" role="region" aria-label="Newsletter Section">
-            <h4>Join our newsletter</h4>
-            
-            <!-- email form -->
-            <div class="container-form">
-                <div class="email-input">
-                    <input type="email" placeholder="Email Address" id="email" required>
-                    <span class="input-icon"><i class="fa fa-envelope"></i></span>
-                </div>
-            </div>
-
-            <h4>Follow us</h4>
-            <!-- social media icons -->
-            <div class="social-icons">
-                <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
-            </div>
-        </section>
-
-        <footer role="contentinfo">
-            <button type="button" class="button-footer">Magic Coffee Co.</button>
-            <nav class="footerNav">
-                <ul>
-                    <li>&copy;2023 Magic Coffee Co.</li>
-                    <li><a href="#privacyPolicy">Privacy Policy</a></li>
-                    <li><a href="#terms">Terms & Conditions</a></li>
-                    <li><a href="#cookie">Cookie Policy</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </footer>
-    </div>
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <button type="button" class="button-footer">Magic Coffee Co.</button>
+        <nav class="footerNav">
+            <ul>
+                <li>&copy;2023 Magic Coffee Co.</li>
+                <li><a href="#privacyPolicy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms & Conditions</a></li>
+                <li><a href="#cookie">Cookie Policy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

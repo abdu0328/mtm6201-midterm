@@ -4,149 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-
-    <link href="css/main.css" rel="stylesheet">
+    <title>Contact</title>
 
     <script src="https://kit.fontawesome.com/87845e1bdf.js" crossorigin="anonymous"></script>
-    <!-- Fonts -->
 
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header role="banner">
-            <div class="logo">
-                <h1><img src="images/logo.png" alt="logo"></h1>
-            </div>
-            <nav class="main-nav">
-                <span class="close-icon">X</span>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#">Search</a></li>
-                    <li><a href="#">Shop</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header id="skip-link-footer" role="banner">
+        <div itemscope itemtype="https://schema.org/ImageObject" class="logo">
+            <h1><img itemprop="logo" src="images/logo.png" alt="Magic Coffee Co. logo"></h1>
+        </div>
+        <nav class="main-nav">
+            <span class="close-icon">X</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <h2>Contact</h2>
+    <h2 id="magic-animate">Contact</h2>
 
-        <picture>
-            <source srcset="images/coffee-shop-320_x_320.jpg" media="(max-width: 479px)">
-            <source srcset="images/coffee-shop-480_x_480.jpg" media="(min-width: 480px)">
-            <img src="images/coffee-shop.jpg" alt="placeholder">
-        </picture>
+    <picture itemscope itemtype="https://schema.org/ImageObject">
+        <source srcset="images/coffee-shop-320_x_320.jpg" media="(max-width: 479px)">
+        <source srcset="images/coffee-shop-480_x_480.jpg" media="(min-width: 480px)">
+        <img itemprop="image" src="images/coffee-shop.jpg" alt="placeholder">
+    </picture>
 
-        <section class="locations" role="region" aria-label="Locations Section">
-            <h4>Our Locations</h4>
-            <div class="location-card">
-                <dl>
-                    <!-- <script type="application/ld+json">
-                        {
-                            "@context": "https://schema.org",
-                            "@type": "LocalBusiness",
-                            "name": "Magic Coffee Co.",
-                            "description": "Magic Coffee Co. is a local coffee shop. This is the original location.",
-                            "openingHours": "Mo,Tu,We,Th,Fr, 08:00-3:00",
-                            "telephone": "+13211231234",
-                            "streetAddress": "123 Cafe Street"
-                        }
-                    </script> -->
-                    <dt>Address:</dt>
-                    <dd itempprop="address">123 Cafe Street</dd>
-                    <dt>Number:</dt>
-                    <dd itemprop="telephone">321-123-1234</dd>
-                    <dt>Hours:</dt>
-                    <dd itemprop="openingHours">8 AM - 3 PM</dd>
-                </dl>
-            </div>
-            <div class="location-card">
-                <dl>
-                    <!-- <script type="application/ld+json">
-                        {
-                            "@context": "https://schema.org",
-                            "@type": "LocalBusiness",
-                            "name": "Magic Coffee Co.",
-                            "description": "Magic Coffee Co. is a local coffee shop. This is the second opening location.",
-                            "openingHours": "Mo,Tu,We,Th,Fr, 08:00-3:00",
-                            "telephone": "+13211231234",
-                            "streetAddress": "231 Latte Street"
-                        }
-                    </script> -->
-                    <dt>Address:</dt>
-                    <dd itempprop="address">231 Latte Street</dd>
-                    <dt>Number:</dt>
-                    <dd itemprop="telephone">321-231-1234</dd>
-                    <dt>Hours:</dt>
-                    <dd itemprop="openingHours">8 AM - 3 PM</dd>
-                </dl>
-            </div>
-            <div class="location-card" itemscope itemtype="https://schema.org/LocalBusiness">
-                <dl>
-                    <!-- <script type="application/ld+json">
-                        {
-                            "@context": "https://schema.org",
-                            "@type": "LocalBusiness",
-                            "name": "Magic Coffee Co.",
-                            "description": "Magic Coffee Co. is a local coffee shop. This is the third opening location.",
-                            "openingHours": "Mo,Tu,We,Th,Fr, 08:00-3:00",
-                            "telephone": "+13213211234",
-                            "streetAddress": "321 Tea Street"
-                        }
-                    </script> -->
-                    <dt>Address:</dt>
-                    <dd itempprop="address">321 Tea Street</dd>
-                    <dt>Number:</dt>
-                    <dd itemprop="telephone">321-321-1234</dd>
-                    <dt>Hours:</dt>
-                    <dd itemprop="openingHours">8 AM - 3 PM</dd>
-                </dl>
-            </div>
-        </section>
+    <!-- Locations Section -->
+    <section class="locations" role="region" aria-label="Locations Section">
+        <h4>Our Locations</h4>
+        <div class="location-card">
+            <dl itemscope itemtype="https://schema.org/LocalBusiness">
+                <dt>Address:</dt>
+                <dd itemprop="address">123 Cafe Street</dd>
+                <dt>Number:</dt>
+                <dd itemprop="telephone">321-123-1234</dd>
+                <dt>Hours:</dt>
+                <dd itemprop="openingHours">8 AM - 3 PM</dd>
+            </dl>
+        </div>
+        <div class="location-card">
+            <dl class="location-card" itemscope itemtype="https://schema.org/LocalBusiness">
+                <dt>Address:</dt>
+                <dd itemprop="address">231 Latte Street</dd>
+                <dt>Number:</dt>
+                <dd itemprop="telephone">321-231-1234</dd>
+                <dt>Hours:</dt>
+                <dd itemprop="openingHours">8 AM - 3 PM</dd>
+            </dl>
+        </div>
+        <div class="location-card">
+            <dl itemscope itemtype="https://schema.org/LocalBusiness">
+                <dt>Address:</dt>
+                <dd itemprop="address">321 Tea Street</dd>
+                <dt>Number:</dt>
+                <dd itemprop="telephone">321-321-1234</dd>
+                <dt>Hours:</dt>
+                <dd itemprop="openingHours">8 AM - 3 PM</dd>
+            </dl>
+        </div>
+    </section>
 
-        <section class="contact-us" role="region" aria-label="Contact Form Section">
-            <div class="contact">
-                <h4>Send us a message</h4>
-                <input id="fullname" name="fullname" type="text" placeholder="Name">
-                <input id="email-contact" name="email" type="text" placeholder="Email">
-                <input id="subject" name="subject" type="text" placeholder="Subject">
-                <textarea id="message" name="message" placeholder="Message"></textarea>
-                <button class="button-3">Send</button>
-            </div>
-        </section>
+    <!-- Contact/Message Section -->
+    <section class="contact-us" role="region" aria-label="Contact Form Section">
+        <div class="contact">
+            <h4>Send us a message</h4>
+            <input id="fullname" name="fullname" type="text" placeholder="Name">
+            <input id="email-contact" name="email" type="text" placeholder="Email">
+            <input id="subject" name="subject" type="text" placeholder="Subject">
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+            <button class="button-3">Send</button>
+        </div>
+    </section>
 
-        <section class="newsletter" role="region" aria-label="Newsletter Section">
-            <h4>Join our newsletter</h4>
-            <!-- email form -->
-            <div class="container-form">
-                <div class="email-input">
-                    <input type="email" placeholder="Email Address" id="email" required>
-                    <span class="input-icon"><i class="fa fa-envelope"></i></span>
-                </div>
+    <!-- Newsletter Section -->
+    <section class="newsletter" role="region" aria-label="Newsletter Section">
+        <h4>Join our newsletter</h4>
+        <!-- newsletter email signup form -->
+        <div class="container-form">
+            <div class="email-input">
+                <input type="email" placeholder="Email Address" id="email" required>
+                <span class="input-icon"><i class="fa fa-envelope"></i></span>
             </div>
-            <h4>Follow us</h4>
-            <!-- social media icons -->
-            <div class="social-icons">
-                <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
-            </div>
-        </section>
+        </div>
+        <h4>Follow us</h4>
+        <!-- social media icon nav bar -->
+        <div class="social-icons">
+            <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
 
-        <footer role="contentinfo">
-            <button type="button" class="button-footer">Magic Coffee Co.</button>
-            <nav class="footerNav">
-                <ul>
-                    <li>&copy;2023 Magic Coffee Co.</li>
-                    <li><a href="#privacyPolicy">Privacy Policy</a></li>
-                    <li><a href="#terms">Terms & Conditions</a></li>
-                    <li><a href="#cookie">Cookie Policy</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </footer>
-    </div>
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <button type="button" class="button-footer">Magic Coffee Co.</button>
+        <nav class="footerNav">
+            <ul>
+                <li>&copy;2023 Magic Coffee Co.</li>
+                <li><a href="#privacyPolicy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms & Conditions</a></li>
+                <li><a href="#cookie">Cookie Policy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

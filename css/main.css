@@ -3,6 +3,7 @@
   --brand-color: #7964D3;
   --secondary-color: white;
   --accent-color: #FDD700;
+  /* default heading sizes */
   --h2-size: 2rem;
   --h3-size: 2.5rem;
   --h4-size: 1.5rem;
@@ -21,11 +22,16 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-
 /* logo and main nav*/
 .logo {
-  background-color: var(--brand-color);
+  margin-left: 5%;
+  float: left;
 }
+
+/* .logo h1 {
+  margin: 0;
+  height: auto;
+} */
 
 .main-nav {
   background-color: var(--brand-color);
@@ -36,12 +42,7 @@ body {
   font-size: 17px;
 }
 
-/* ul {
-  list-style-type: none;
-} */
 .main-nav ul li {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   list-style-type: none;
 }
 
@@ -57,8 +58,7 @@ body {
   color: var(--accent-color);
 }
 
-
-.main-nav  ul li a:hover {
+.main-nav ul li a:hover {
   background-color: var(--accent-color);
   border-radius: 5px;
   color: var(--brand-color);
@@ -74,9 +74,15 @@ body {
   padding-bottom: 1rem;
 }
 
-/* headings and paragraph styles */
+.main-nav ul li:nth-child(1) a {
+  /* targeting to provide space between the first home link from the skip-link */
+  margin-top: 2.5rem;
+}
+
+/* Headings and Paragraph Styles */
 h1 {
-  background-color: var(--brand-color);
+  /* background-color: var(--brand-color); */
+  margin-top: 0.5rem;
 }
 
 h2 {
@@ -89,7 +95,6 @@ h2 {
 h3 {
   padding-bottom: 1rem;
   font-size: var(--h3-size);
-  /* text-align: center; */
 }
 
 p {
@@ -108,7 +113,7 @@ h5 {
 }
 
 /* INDEX PAGE CSS */
-/* welcome section */
+/* Welcome Section */
 .welcome {
   background-color: var(--brand-color);
 }
@@ -198,7 +203,6 @@ img {
 }
 
 /* Footer */
-
 footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -221,6 +225,7 @@ footer {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
   text-decoration: none;
+  color: var(--secondary-color);
 }
 
 .footerNav a:hover{
@@ -232,6 +237,7 @@ footer {
 }
 
 /* Buttons */
+/* styling the buttons to be the same but different colours and widths according to the content */
 .button-main {
   background-color: var(--accent-color); 
   border: solid var(--accent-color);
@@ -337,6 +343,7 @@ footer {
 }
 
 .starcontent { 
+  /* using icon and repeating it across the x-axis creating a banner */
   background-image: url("../images/star-icon.png");
   background-repeat: repeat-x;
   height: 30px;
@@ -347,6 +354,7 @@ footer {
   }
 
 /* Newsletter Email Input/Form */
+  /* having the contain form along center y-axis of the page */
   .container-form {
     display: flex;
     justify-content: center;
@@ -355,7 +363,7 @@ footer {
     padding-bottom: 4rem;
   }
   
-  /* -- puts content input all inline */
+  /* puts content input all inline */
   .email-input {
     position: relative;
     display: inline-block;
@@ -364,20 +372,25 @@ footer {
   .email-input #email {
     border: none;
     border-bottom: 1px solid var(--secondary-color);
-    padding-right: 30px; /* Space for the icon */
-    width: 200px; /* Adjust the width as needed */
+    /* space for the icon */
+    padding-right: 30px; 
+    /* adjust the width as needed */
+    width: 200px;
     background-color: var(--brand-color);
     color: var(--secondary-color);
   }
 
+  /* styling the placeholder text color */
   input::placeholder{
     color: var(--secondary-color);
   }
   
+  /* positioning the icon element absolutely within its container */
   .email-input .input-icon {
     position: absolute;
     top: 50%;
     right: 5px;
+  /* shifts the icon up by 50% of its own height, centering the element vertically within its parent */
     transform: translateY(-50%);
   }
   
@@ -409,15 +422,14 @@ footer {
 }
 
 .icon {
+  /* making flex icons then horizontally centering it using justify-content */
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  /* background-color: #333; */
   margin: 15px;
-  color: white;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -426,6 +438,7 @@ footer {
   padding-right: 1rem;
 }
 
+/* styling social media icons */
 .facebook,
 .twitter,
 .instagram {
@@ -452,7 +465,6 @@ footer {
   width: 50%;
   margin: auto;
   margin-bottom: 1rem;
-  /* display: block; */
 }
 
 .location-card dt {
@@ -480,6 +492,7 @@ footer {
   width: 100%;
 }
 
+/* using pseudo-element selctor to target placeholders */
 #fullname::placeholder,
 #email-contact::placeholder,
 #subject::placeholder,
@@ -530,24 +543,25 @@ footer {
 }
 
 #magic-animate {
-  animation-name: hoverstate;
-  animation-duration: 1s;
+  /* setting up h1 animation*/
+  animation-name: h1magic;
+  animation-duration: 1.25s;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
-  /* animation-timing-function: ease-in-out; */
+  animation-timing-function: ease-in-out;
 }
 
 /* ANIMATIONS */
 /* Animation 1 */
-@keyframes hoverstate {
+@keyframes h1magic {
   0%{
     transform: rotate(-2deg);
-    color: var(--accent-color);
+    /* color: var(--accent-color); */
   }
   
   50%{
     transform: rotate(2deg);
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
   }
 
   100%{
@@ -557,6 +571,7 @@ footer {
 }
 
 /* Animation 2 */
+/* setting and styling Animation 2 - star icon */
 .star-header {
   width: 30px;
   height: 30px;

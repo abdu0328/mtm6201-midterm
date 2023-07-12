@@ -11,15 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Poppins:wght@400;800&display=swap" rel="stylesheet">
 
-    <link href="css/main.css" rel="stylesheet">
-
     <script src="https://kit.fontawesome.com/87845e1bdf.js" crossorigin="anonymous"></script>
-    <!-- Fonts -->
+
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- skip link that skips to the main content -->
     <a class="skip-link" href="#skip-link" aria-label="Skip to main content">Skip to main content</a>
-    <div class="wrapper">
         <header id="skip-link-footer" role="banner">
             <div itemscope itemtype="https://schema.org/ImageObject" class="logo">
                 <h1><img itemprop="logo" src="images/logo.png" alt="Magic Coffee Co. logo"></h1>
@@ -36,12 +35,10 @@
             </nav>
         </header>
 
-        <h2> 
-            <!-- <img class="star-header" src="images/star-icon.png" alt="star">  -->
-                <div id="magic-animate">Magic Coffee Co. </div>
-            <!-- <img class="star-header" src="images/star-icon.png" alt="star"> -->
-        </h2>
+        <!-- giving id to add animation to h1 -->
+        <h2 id="magic-animate"> Magic Coffee Co. </h2>
 
+        <!-- Welcome Section -->
         <section class="welcome" role="region" aria-label="Welcome Section">
             <picture itemscope itemtype="https://schema.org/ImageObject">
                 <source srcset="images/purple-mist-320_x_221.jpg" media="(max-width: 479px)">
@@ -50,21 +47,26 @@
             </picture>
             <div class="content" id="skip-link">
                 <h3>Start your day with a little magic <img class="star-header" src="images/star-icon.png" alt="star"> </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus suscipit quisquam magnam. Voluptas exercitationem dolor ad fuga, temporibus tempore unde officia error distinctio doloremque, deserunt enim vitae quam nobis.</p>
+                <p>We focus on quality and customer 
+                    service, and to continually innovate 
+                    and experiment with new coffee 
+                    flavours and brewing methods.</p>
                 <button type="button" class="button-main">Menu</button>
                 <button type="button" class="button-secondary">Find Us</button>
             </div>
         </section>
 
+        <!-- creating a class to make a banner/divider background image -->
         <section class="banner">
             <div class="starcontent"></div>
         </section>
 
+        <!-- Favourites Section -->
         <section class="favourites" role="region" aria-label="Customer Favourites Section">
             <h4>Customer Favourites</h4>
             <article class="drinks" itemscope itemtype="https://schema.org/Article">
                 <picture itemscope itemtype="https://schema.org/ImageObject">
-                    <source srcset="images/pixie-latte-320_x_360.jpg" media="(max-width: 479px)">
+                    <source srcset="images/pixie-latte-320_x_320.jpg" media="(max-width: 479px)">
                     <source srcset="images/pixie-latte-480_x_480.jpg" media="(min-width: 480px)">
                     <img itemprop="image" src="images/pixie-latte.jpg" alt="placeholder">
                 </picture>
@@ -76,10 +78,12 @@
             <button type="button" class="button-shop">Order Ahead</button>
         </section>
 
+       <!-- Banner -->
         <section class="banner">
             <div class="starcontent"></div>
         </section>
 
+        <!-- "Magic" Section -->
         <section class="magic" role="region" aria-label="Magic Section">
             <picture itemscope itemtype="https://schema.org/ImageObject">
                 <source srcset="images/magic-mobile-320_x_300.jpg" media="(max-width: 479px)">
@@ -93,19 +97,23 @@
             </div>
         </section>
 
+        <!-- Banner -->
         <section class="banner">
             <div class="starcontent"></div>
         </section>
 
+        <!-- Testimonials Section -->
         <section class="testimonials" role="region" aria-label="Testimonials Section">
             <h4>Testimonials</h4>
             <article class="quote">
                 <p>“Every drink I’ve tried is a magical experience! Definitely a great way to shake up the morning.”</p>
             </article>
         </section>
-
+    
+        <!-- Newsletter Section -->
         <section class="newsletter" role="region" aria-label="Newsletter Section">
             <h4>Join our newsletter</h4>
+            <!-- newsletter email signup form -->
             <div class="container-form">
                 <div class="email-input">
                     <input type="email" placeholder="Email Address" id="email" required>
@@ -113,6 +121,7 @@
                 </div>
             </div>
             <h4>Follow us</h4>
+            <!-- social media icon nav bar -->
             <div class="social-icons">
                 <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
@@ -120,7 +129,9 @@
             </div>
         </section>
 
+        <!-- Footer -->
         <footer role="contentinfo">
+            <!-- skip link in the footer that goes back to the top -->
             <a class="skip-link-footer" href="#skip-link-footer" aria-label="Back to top">Back to top</a>
             <button type="button" class="button-footer">Magic Coffee Co.</button>
             <nav class="footerNav">
@@ -133,6 +144,5 @@
                 </ul>
             </nav>
         </footer>
-    </div>
 </body>
 </html>
